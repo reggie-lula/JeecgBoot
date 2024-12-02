@@ -277,7 +277,7 @@ jeecg:
     dataSourceSafe: false
     lowCodeMode: dev
   # 签名密钥串(前后端要一致，正式发布请自行修改)
-  signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
+  signatureSecret: 749eda95f9fa6d49v442add05f1c54d63
   # 本地：local\Minio：minio\阿里云：alioss
   uploadType: local
   # 前端访问地址
@@ -786,7 +786,7 @@ jeecg:
   firewall:
     dataSourceSafe: false
     lowCodeMode: dev
-  signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
+  signatureSecret: 749eda95f9fa6d49v442add05f1c54d63
   signUrls: /sys/dict/getDictItems/*,/sys/dict/loadDict/*,/sys/dict/loadDictOrderByValue/*,/sys/dict/loadDictItem/*,/sys/dict/loadTreeData,/sys/api/queryTableDictItemsByCode,/sys/api/queryFilterTableDictInfo,/sys/api/queryTableDictByKeys,/sys/api/translateDictFromTable,/sys/api/translateDictFromTableByKeys
   uploadType: local
   domainUrl:
@@ -1267,7 +1267,7 @@ jeecg:
     dataSourceSafe: false
     lowCodeMode: dev
   # 签名密钥串(前后端要一致，正式发布请自行修改)
-  signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
+  signatureSecret: 749eda95f9fa6d49v442add05f1c54d63
   # 本地：local\Minio：minio\阿里云：alioss
   uploadType: local
   # 前端访问地址
@@ -1775,7 +1775,7 @@ jeecg:
   firewall:
     dataSourceSafe: false
     lowCodeMode: dev
-  signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
+  signatureSecret: 749eda95f9fa6d49v442add05f1c54d63
   signUrls: /sys/dict/getDictItems/*,/sys/dict/loadDict/*,/sys/dict/loadDictOrderByValue/*,/sys/dict/loadDictItem/*,/sys/dict/loadTreeData,/sys/api/queryTableDictItemsByCode,/sys/api/queryFilterTableDictInfo,/sys/api/queryTableDictByKeys,/sys/api/translateDictFromTable,/sys/api/translateDictFromTableByKeys,/sys/sendChangePwdSms,/sys/user/sendChangePhoneSms,/sys/sms,/desform/api/sendVerifyCode
   uploadType: local
   domainUrl:
@@ -2208,7 +2208,7 @@ jeecg:
   firewall:
     dataSourceSafe: false
     lowCodeMode: dev
-  signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
+  signatureSecret: 749eda95f9fa6d49v442add05f1c54d63
   signUrls: /sys/dict/getDictItems/*,/sys/dict/loadDict/*,/sys/dict/loadDictOrderByValue/*,/sys/dict/loadDictItem/*,/sys/dict/loadTreeData,/sys/api/queryTableDictItemsByCode,/sys/api/queryFilterTableDictInfo,/sys/api/queryTableDictByKeys,/sys/api/translateDictFromTable,/sys/api/translateDictFromTableByKeys,/sys/sendChangePwdSms,/sys/user/sendChangePhoneSms,/sys/sms,/desform/api/sendVerifyCode
   uploadType: local
   domainUrl:
@@ -2642,7 +2642,7 @@ jeecg:
   firewall:
     dataSourceSafe: false
     lowCodeMode: dev
-  signatureSecret: dd05f1c54d63749eda95f9fa6d49v442a
+  signatureSecret: 749eda95f9fa6d49v442add05f1c54d63
   signUrls: /sys/dict/getDictItems/*,/sys/dict/loadDict/*,/sys/dict/loadDictOrderByValue/*,/sys/dict/loadDictItem/*,/sys/dict/loadTreeData,/sys/api/queryTableDictItemsByCode,/sys/api/queryFilterTableDictInfo,/sys/api/queryTableDictByKeys,/sys/api/translateDictFromTable,/sys/api/translateDictFromTableByKeys
   uploadType: local
   domainUrl:
