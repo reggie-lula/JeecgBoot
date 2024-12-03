@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: 编译前端并制作镜像推送到阿里云
 
 on:
   push:
