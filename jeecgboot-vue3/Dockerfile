@@ -1,13 +1,13 @@
 FROM registry.cn-hangzhou.aliyuncs.com/dockerhub_mirror/nginx
-MAINTAINER jeecgos@163.com
+MAINTAINER i@lula.ltd
 VOLUME /tmp
 ENV LANG en_US.UTF-8
 RUN echo "server {  \
                       listen       80; \
-                      location   /jeecgboot/ { \
-                      proxy_pass              http://jeecg-boot-system:8080/jeecg-boot/; \
+                      location   /lulaboot/ { \
+                      proxy_pass              http://lula-boot-server:8080/lula-boot/; \
                       proxy_redirect          off; \
-                      proxy_set_header        Host jeecg-boot-system; \
+                      proxy_set_header        Host lula-boot-server; \
                       proxy_set_header        X-Real-IP \$remote_addr; \
                       proxy_set_header        X-Forwarded-For \$proxy_add_x_forwarded_for; \
                   } \
@@ -26,5 +26,5 @@ RUN echo "server {  \
     &&  mkdir -p /var/www/html
 
 ADD dist/ /var/www/html/
-EXPOSE 80
-EXPOSE 443
+EXPOSE 8080
+EXPOSE 8443

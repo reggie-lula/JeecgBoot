@@ -289,8 +289,8 @@ knife4j:
   production: true
   basic:
     enable: true
-    username: jeecg
-    password: jeecg1314
+    username: reggie
+    password: Re!g@G#ie123
 #第三方登录
 justauth:
   enabled: true
