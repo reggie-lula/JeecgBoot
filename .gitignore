@@ -5,6 +5,7 @@ rebel.xml
 
 ## backend
 **/target
+**/build
 **/logs
 
 ## front
