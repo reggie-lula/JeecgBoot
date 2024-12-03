@@ -1,0 +1,49 @@
+name: Build and Push Docker Image
+
+on:
+  push:
+    branches: [ "master" ]
+    paths:
+      - 'jeecgboot-vue3/**'
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install pnpm
+      run: npm install -g pnpm
+
+    - name: Install dependencies
+      working-directory: jeecgboot-vue3
+      run: pnpm install
+
+    - name: Build Vue 3 project
+      working-directory: jeecgboot-vue3
+      run: pnpm run build
+
+    - name: Log in to Docker registry
+      uses: docker/login-action@v2
+      with:
+        registry: registry.cn-hangzhou.aliyuncs.com
+        username: ${{ lulaboot-vue3.DOCKER_USERNAME }}
+        password: ${{ lulaboot-vue3.DOCKER_PASSWORD }}
+
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v3
+      with:
+        context: .
+        file: ./Dockerfile
+        push: true
+        tags: |
+          registry.cn-hangzhou.aliyuncs.com/lulaboot-vue3:latest
+          registry.cn-hangzhou.aliyuncs.com/lulaboot-vue3:$(date +%s)
