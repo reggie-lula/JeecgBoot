@@ -35,8 +35,8 @@ jobs:
       uses: docker/login-action@v2
       with:
         registry: registry.cn-hangzhou.aliyuncs.com
-        username: ${{ secrets.lulaboot-vue3.DOCKER_USERNAME }}
-        password: ${{ secrets.lulaboot-vue3.DOCKER_PASSWORD }}
+        username: ${{ secrets.ALIYUN_DOCKER_USERNAME }}
+        password: ${{ secrets.ALIYUN_DOCKER_PASSWORD }}
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v3
